@@ -2,17 +2,26 @@ import { useState, useEffect, useRef } from 'react';
 import { Camera, Share2, RotateCcw, Check } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { Question, Rating } from '../types';
-import questionsData from '../data/questions.json';
 
-export default function Questionnaire() {
+interface QuestionnaireProps {
+  questions: Question[];
+  title: string;
+  description: string;
+  downloadFilename: string;
+}
+
+export default function Questionnaire({
+  questions,
+  title,
+  description,
+  downloadFilename,
+}: QuestionnaireProps) {
   const [hasStarted, setHasStarted] = useState(false);
   const [showNSFW, setShowNSFW] = useState(false);
   const [responses, setResponses] = useState<Record<string, Rating>>({});
   const [isCapturing, setIsCapturing] = useState(false);
   const [shareSuccess, setShareSuccess] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
-
-  const questions = questionsData as Question[];
 
   const filteredQuestions = questions.filter(
     (q) => !q.hidden && (showNSFW || !q.nsfw)
@@ -56,7 +65,7 @@ export default function Questionnaire() {
         if (blob) {
           const url = URL.createObjectURL(blob);
           const link = document.createElement('a');
-          link.download = 'mes-preferences-hypnotiques.png';
+          link.download = downloadFilename;
           link.href = url;
           link.click();
           URL.revokeObjectURL(url);
@@ -114,11 +123,10 @@ export default function Questionnaire() {
       <div className="min-h-screen bg-brand-dark flex items-center justify-center px-4">
         <div className="text-center max-w-2xl">
           <h1 className="text-5xl md:text-6xl font-bold text-brand-accent mb-6">
-            Mes préférences hypnotiques
+            {title}
           </h1>
           <p className="text-xl text-gray-300 mb-12">
-            Découvrez et partagez vos préférences en matière d'hypnose.
-            Répondez aux questions en évaluant chaque pratique de 0 à 5.
+            {description}
           </p>
           <button
             onClick={() => setHasStarted(true)}
@@ -187,7 +195,7 @@ export default function Questionnaire() {
 
         <div ref={contentRef} className="bg-brand-mid rounded-lg p-8 animate-fadeIn">
           <h2 className="text-3xl font-bold text-brand-accent mb-6 text-center">
-            Mes préférences hypnotiques
+            {title}
           </h2>
 
           <div className="space-y-6">

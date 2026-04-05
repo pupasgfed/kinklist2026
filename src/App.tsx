@@ -1,16 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Questionnaire from './pages/Questionnaire';
+import QuestionnaireAdvanced from './pages/QuestionnaireAdvanced';
+import QuestionnaireBasic from './pages/QuestionnaireBasic';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-brand-dark">
-      <Header />
-      <main className="flex-1">
-        <Questionnaire />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter basename="/hypnotic-kinklist">
+      <div className="min-h-screen flex flex-col bg-brand-dark">
+        <Header />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<QuestionnaireAdvanced />} />
+            <Route path="/basic" element={<QuestionnaireBasic />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
