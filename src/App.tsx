@@ -6,7 +6,7 @@ import QuestionnaireBasic from './pages/QuestionnaireBasic';
 
 function App() {
   return (
-    <BrowserRouter basename="/hypnotic-kinklist">
+    <BrowserRouter basename="/kinklist2026">
       <div className="min-h-screen flex flex-col bg-brand-dark">
         <Header />
         <main className="flex-1">
