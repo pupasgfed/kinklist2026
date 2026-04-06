@@ -56,6 +56,8 @@ export default function Questionnaire({
 
     setIsCapturing(true);
 
+    await new Promise(resolve => setTimeout(resolve, 100));
+
     try {
       const canvas = await html2canvas(contentRef.current, {
         backgroundColor: '#323347',
