@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { copyFileSync, writeFileSync } from 'fs';
 
 export default defineConfig({
-  base: '/hypnotic-kinklist/',
+  base: '/kinklist2026/',
   plugins: [
     react(),
     {
