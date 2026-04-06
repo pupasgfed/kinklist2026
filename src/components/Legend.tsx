@@ -11,7 +11,7 @@ export default function Legend() {
   ];
 
   return (
-    <div className="fixed right-8 top-24 z-50 bg-brand-mid rounded-lg shadow-xl p-6 border border-gray-600 max-w-xs">
+    <div className="fixed right-8 top-[550px] z-50 bg-brand-mid rounded-lg shadow-xl p-6 border border-gray-600 max-w-xs">
       <h3 className="text-white font-bold text-lg mb-4 text-center">
         Les bonnes questions à se poser et à partager à son hypnotiseur avant la session
       </h3>
