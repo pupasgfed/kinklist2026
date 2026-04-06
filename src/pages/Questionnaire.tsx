@@ -223,33 +223,35 @@ export default function Questionnaire({
 
                       return (
                         <div key={question.id}>
-                          <div className="md:hidden bg-gray-700/50 rounded-lg border-l-4 border-brand-accent/60 p-4">
-                            <div className="text-gray-100 text-base font-medium mb-3">
-                              {question.label}
+                          {!isCapturing && (
+                            <div className="md:hidden bg-gray-700/50 rounded-lg border-l-4 border-brand-accent/60 p-4">
+                              <div className="text-gray-100 text-base font-medium mb-3">
+                                {question.label}
+                              </div>
+                              <div className="grid grid-cols-2 gap-2">
+                                {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
+                                  <button
+                                    key={rating}
+                                    onClick={() => handleRatingClick(question.id, rating)}
+                                    className={`
+                                      px-3 py-2.5 rounded-lg text-sm font-medium
+                                      border-2 transition-all active:scale-95
+                                      ${
+                                        currentRating === rating
+                                          ? `${getRatingColor(rating)} border-gray-900 text-gray-900 shadow-md`
+                                          : 'bg-gray-700 border-gray-600 hover:border-gray-500 text-gray-200'
+                                      }
+                                    `}
+                                    title={`${rating} - ${getRatingLabel(rating)}`}
+                                  >
+                                    {rating} - {getRatingLabel(rating)}
+                                  </button>
+                                ))}
+                              </div>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
-                              {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
-                                <button
-                                  key={rating}
-                                  onClick={() => handleRatingClick(question.id, rating)}
-                                  className={`
-                                    px-3 py-2.5 rounded-lg text-sm font-medium
-                                    border-2 transition-all active:scale-95
-                                    ${
-                                      currentRating === rating
-                                        ? `${getRatingColor(rating)} border-gray-900 text-gray-900 shadow-md`
-                                        : 'bg-gray-700 border-gray-600 hover:border-gray-500 text-gray-200'
-                                    }
-                                  `}
-                                  title={`${rating} - ${getRatingLabel(rating)}`}
-                                >
-                                  {rating} - {getRatingLabel(rating)}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
+                          )}
 
-                          <div className="hidden md:flex bg-gray-700 rounded items-center overflow-hidden hover:bg-gray-650 transition-colors">
+                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: '#4a4a5e', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden' }}>
                             <div className="flex gap-1 p-2 justify-start">
                               {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
                                 <button
