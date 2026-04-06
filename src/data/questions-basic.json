@@ -1,302 +1,128 @@
 [
   {
-    "id": "q001",
-    "label": "Relaxation profonde",
+    "id": "format_001",
+    "label": "Session Video",
+    "category": "Formats",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q002",
-    "label": "Suggestions de confiance en soi",
+    "id": "format_002",
+    "label": "Audios enregistré",
+    "category": "Formats",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q003",
-    "label": "Visualisation guidée",
+    "id": "format_003",
+    "label": "Session en réel",
+    "category": "Formats",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q004",
-    "label": "Inductions progressives",
+    "id": "pheno_001",
+    "label": "Jeux d'émotions",
+    "category": "Phénomènes hypnotiques",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q005",
-    "label": "Techniques de respiration",
+    "id": "pheno_002",
+    "label": "Jeux de sensations",
+    "category": "Phénomènes hypnotiques",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q006",
-    "label": "Suggestions post-hypnotiques",
+    "id": "pheno_003",
+    "label": "Amnésie dans la séance",
+    "category": "Phénomènes hypnotiques",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q007",
-    "label": "Amnésie suggérée",
+    "id": "pheno_004",
+    "label": "Amnésie après la séance",
+    "category": "Phénomènes hypnotiques",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q008",
-    "label": "Catalepsie",
+    "id": "pheno_005",
+    "label": "Triggers",
+    "category": "Phénomènes hypnotiques",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q009",
-    "label": "Lévitation de bras",
+    "id": "pheno_006",
+    "label": "Surprise (ne pas savoir quelles seront les suggestions)",
+    "category": "Phénomènes hypnotiques",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q010",
-    "label": "Anesthésie suggérée",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q011",
-    "label": "Régression",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q012",
-    "label": "Progression dans le futur",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q013",
-    "label": "Changement de perception du temps",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q014",
-    "label": "Hallucinations positives",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q015",
-    "label": "Hallucinations négatives",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q016",
-    "label": "Dissociation",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q017",
-    "label": "Sensations physiques amplifiées",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q018",
-    "label": "Contrôle de la douleur",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q019",
-    "label": "Amélioration des performances",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q020",
-    "label": "Gestion du stress",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q021",
-    "label": "Soumission suggérée",
+    "id": "body_001",
+    "label": "Nudité pour moi-même",
+    "category": "Corps et Images",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q022",
-    "label": "Dominance suggérée",
+    "id": "body_002",
+    "label": "Nudité pour l'hypnotiseur",
+    "category": "Corps et Images",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q023",
-    "label": "Suggestions érotiques",
+    "id": "body_003",
+    "label": "Photos et vidéos",
+    "category": "Corps et Images",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q024",
-    "label": "Orgasme sur commande",
+    "id": "body_004",
+    "label": "Partage des photos et vidéos",
+    "category": "Corps et Images",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q025",
-    "label": "Déni d'orgasme",
+    "id": "sex_001",
+    "label": "Je me touche",
+    "category": "Sexualité et hypnose",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q026",
-    "label": "Sensations tactiles suggérées",
+    "id": "sex_002",
+    "label": "Toucher mutuel",
+    "category": "Sexualité et hypnose",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q027",
-    "label": "Fantasmes guidés",
+    "id": "sex_003",
+    "label": "Toucher sexuel",
+    "category": "Sexualité et hypnose",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q028",
-    "label": "Modification de la sensibilité corporelle",
+    "id": "sex_004",
+    "label": "Oral",
+    "category": "Sexualité et hypnose",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q029",
-    "label": "Jeu de rôle hypnotique",
+    "id": "sex_005",
+    "label": "Anal",
+    "category": "Sexualité et hypnose",
     "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q030",
-    "label": "Immobilisation mentale",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q031",
-    "label": "Contrôle du plaisir",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q032",
-    "label": "Perte de contrôle volontaire",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q033",
-    "label": "Triggers érotiques",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q034",
-    "label": "Bimbofication",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q035",
-    "label": "Transformation suggérée",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q036",
-    "label": "Hypnose de poupée",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q037",
-    "label": "Contrôle mental",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q038",
-    "label": "Lavage de cerveau consensuel",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q039",
-    "label": "Esclavage mental temporaire",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q040",
-    "label": "Humiliation érotique",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q041",
-    "label": "Méditation guidée",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q042",
-    "label": "Ancrage émotionnel",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q043",
-    "label": "Techniques d'auto-hypnose",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q044",
-    "label": "Renforcement de motivation",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q045",
-    "label": "Changement d'habitudes",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q046",
-    "label": "Gestion de l'anxiété",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q047",
-    "label": "Amélioration du sommeil",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q048",
-    "label": "Créativité amplifiée",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q049",
-    "label": "Mémoire améliorée",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q050",
-    "label": "Concentration renforcée",
-    "nsfw": false,
     "hidden": false
   }
 ]
