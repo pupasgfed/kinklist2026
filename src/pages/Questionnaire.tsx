@@ -108,12 +108,12 @@ export default function Questionnaire({
 
   const getRatingColor = (rating: Rating): string => {
     const colors: Record<Rating, string> = {
-      0: 'bg-gray-600',
-      1: 'bg-red-600',
-      2: 'bg-orange-600',
-      3: 'bg-yellow-600',
-      4: 'bg-green-600',
-      5: 'bg-emerald-600',
+      0: 'bg-white',
+      1: 'bg-pink-300',
+      2: 'bg-green-400',
+      3: 'bg-yellow-300',
+      4: 'bg-orange-400',
+      5: 'bg-pink-400',
     };
     return colors[rating];
   };
@@ -199,43 +199,52 @@ export default function Questionnaire({
           </h2>
 
           <div className="space-y-6">
-            {filteredQuestions.map((question) => {
-              const currentRating = responses[question.id];
+            {(() => {
+              const groupedQuestions = filteredQuestions.reduce((acc, question) => {
+                const category = question.category || 'Général';
+                if (!acc[category]) acc[category] = [];
+                acc[category].push(question);
+                return acc;
+              }, {} as Record<string, Question[]>);
 
-              return (
-                <div
-                  key={question.id}
-                  className="bg-brand-dark rounded-lg p-6 border-l-4 border-brand-accent"
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-lg font-semibold text-gray-200 flex-1">
-                      {question.label}
-                    </h3>
-                    {question.nsfw && (
-                      <span className="px-3 py-1 bg-red-900 text-red-200 rounded-full text-xs font-semibold ml-4">
-                        NSFW
-                      </span>
-                    )}
+              return Object.entries(groupedQuestions).map(([category, categoryQuestions]) => (
+                <div key={category} className="space-y-2">
+                  <div className="bg-gray-600 rounded px-4 py-2">
+                    <h3 className="text-white font-semibold text-sm">{category}</h3>
                   </div>
+                  <div className="space-y-1">
+                    {categoryQuestions.map((question) => {
+                      const currentRating = responses[question.id];
 
-                  <div className="flex flex-wrap gap-2">
-                    {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
-                      <button
-                        key={rating}
-                        onClick={() => handleRatingClick(question.id, rating)}
-                        className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all ${
-                          currentRating === rating
-                            ? `${getRatingColor(rating)} text-white scale-105 shadow-lg`
-                            : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                        }`}
-                      >
-                        {rating} - {getRatingLabel(rating)}
-                      </button>
-                    ))}
+                      return (
+                        <div
+                          key={question.id}
+                          className="bg-gray-700 rounded flex items-center overflow-hidden hover:bg-gray-650 transition-colors"
+                        >
+                          <div className="flex gap-1 p-2">
+                            {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
+                              <button
+                                key={rating}
+                                onClick={() => handleRatingClick(question.id, rating)}
+                                className={`w-7 h-7 rounded-full border-2 transition-all ${
+                                  currentRating === rating
+                                    ? `${getRatingColor(rating)} border-gray-900`
+                                    : 'bg-white border-gray-400 hover:border-gray-600'
+                                }`}
+                                title={`${rating} - ${getRatingLabel(rating)}`}
+                              />
+                            ))}
+                          </div>
+                          <div className="flex-1 px-4 py-2 text-gray-100 text-sm">
+                            {question.label}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
-              );
-            })}
+              ));
+            })()}
           </div>
 
           {filteredQuestions.length === 0 && (
