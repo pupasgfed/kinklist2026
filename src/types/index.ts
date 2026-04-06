@@ -3,6 +3,7 @@ export interface Question {
   label: string;
   nsfw: boolean;
   hidden?: boolean;
+  category?: string;
 }
 
 export interface Response {
