@@ -123,15 +123,15 @@ export default function Questionnaire({
     return (
       <div className="min-h-screen bg-brand-dark flex items-center justify-center px-4">
         <div className="text-center max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-brand-accent mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-accent mb-4 md:mb-6 px-2">
             {title}
           </h1>
-          <p className="text-xl text-gray-300 mb-12">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 md:mb-12 px-4">
             {description}
           </p>
           <button
             onClick={() => setHasStarted(true)}
-            className="px-12 py-6 rounded-lg font-bold text-2xl bg-brand-accent text-brand-dark hover:shadow-lg hover:shadow-brand-accent/50 hover:scale-105 transition-all transform"
+            className="px-8 py-4 sm:px-10 sm:py-5 md:px-12 md:py-6 rounded-lg font-bold text-xl sm:text-2xl bg-brand-accent text-brand-dark hover:shadow-lg hover:shadow-brand-accent/50 hover:scale-105 transition-all transform active:scale-95"
           >
             Répondre
           </button>
@@ -141,24 +141,24 @@ export default function Questionnaire({
   }
 
   return (
-    <div className="min-h-screen bg-brand-dark">
+    <div className="min-h-screen bg-brand-dark pb-20 md:pb-8">
       <Legend />
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="flex justify-end items-center gap-4 mb-8">
-          <div className="flex items-center gap-3">
-            <label htmlFor="nsfw-toggle" className="text-gray-200 font-semibold text-sm">
-              Contenu NSFW
+      <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 md:py-8">
+        <div className="flex flex-wrap justify-end items-center gap-2 sm:gap-3 md:gap-4 mb-4 md:mb-8">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <label htmlFor="nsfw-toggle" className="text-gray-200 font-semibold text-xs sm:text-sm">
+              NSFW
             </label>
             <button
               id="nsfw-toggle"
               onClick={() => setShowNSFW(!showNSFW)}
-              className={`relative inline-flex h-8 w-14 items-center rounded-full transition-colors ${
+              className={`relative inline-flex h-7 w-12 sm:h-8 sm:w-14 items-center rounded-full transition-colors ${
                 showNSFW ? 'bg-brand-accent' : 'bg-gray-600'
               }`}
             >
               <span
-                className={`inline-block h-6 w-6 transform rounded-full bg-white transition-transform ${
-                  showNSFW ? 'translate-x-7' : 'translate-x-1'
+                className={`inline-block h-5 w-5 sm:h-6 sm:w-6 transform rounded-full bg-white transition-transform ${
+                  showNSFW ? 'translate-x-6 sm:translate-x-7' : 'translate-x-1'
                 }`}
               />
             </button>
@@ -167,20 +167,22 @@ export default function Questionnaire({
           <button
             onClick={handleScreenshot}
             disabled={isCapturing}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-brand-accent hover:text-brand-dark transition-all disabled:opacity-50"
+            className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-brand-accent hover:text-brand-dark transition-all disabled:opacity-50 active:scale-95"
             title="Capturer en image"
           >
-            <Camera size={20} />
+            <Camera size={18} className="sm:w-5 sm:h-5" />
+            <span className="hidden sm:inline text-sm">Image</span>
           </button>
 
           <button
             onClick={handleShare}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-brand-accent hover:text-brand-dark transition-all relative"
+            className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-brand-accent hover:text-brand-dark transition-all relative active:scale-95"
             title="Partager le lien"
           >
-            {shareSuccess ? <Check size={20} /> : <Share2 size={20} />}
+            {shareSuccess ? <Check size={18} className="sm:w-5 sm:h-5" /> : <Share2 size={18} className="sm:w-5 sm:h-5" />}
+            <span className="hidden sm:inline text-sm">Partager</span>
             {shareSuccess && (
-              <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded text-xs whitespace-nowrap">
+              <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded text-xs whitespace-nowrap z-10">
                 Lien copié!
               </span>
             )}
@@ -188,19 +190,20 @@ export default function Questionnaire({
 
           <button
             onClick={handleRestart}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-red-600 hover:text-white transition-all"
+            className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-red-600 hover:text-white transition-all active:scale-95"
             title="Recommencer"
           >
-            <RotateCcw size={20} />
+            <RotateCcw size={18} className="sm:w-5 sm:h-5" />
+            <span className="hidden sm:inline text-sm">Recommencer</span>
           </button>
         </div>
 
-        <div ref={contentRef} className="bg-brand-mid rounded-lg p-8 animate-fadeIn">
-          <h2 className="text-3xl font-bold text-brand-accent mb-6 text-center">
+        <div ref={contentRef} className="bg-brand-mid rounded-lg p-4 sm:p-6 md:p-8 animate-fadeIn">
+          <h2 className="text-2xl sm:text-3xl font-bold text-brand-accent mb-4 sm:mb-6 text-center">
             {title}
           </h2>
 
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {(() => {
               const groupedQuestions = filteredQuestions.reduce((acc, question) => {
                 const category = question.category || 'Général';
@@ -211,24 +214,24 @@ export default function Questionnaire({
 
               return Object.entries(groupedQuestions).map(([category, categoryQuestions]) => (
                 <div key={category} className="space-y-2">
-                  <div className="bg-gray-600 rounded px-4 py-2">
-                    <h3 className="text-white font-semibold text-sm">{category}</h3>
+                  <div className="bg-gray-600 rounded px-3 sm:px-4 py-2">
+                    <h3 className="text-white font-semibold text-xs sm:text-sm">{category}</h3>
                   </div>
-                  <div className="space-y-1">
+                  <div className="space-y-1 sm:space-y-1.5">
                     {categoryQuestions.map((question) => {
                       const currentRating = responses[question.id];
 
                       return (
                         <div
                           key={question.id}
-                          className="bg-gray-700 rounded flex items-center overflow-hidden hover:bg-gray-650 transition-colors"
+                          className="bg-gray-700 rounded flex flex-col sm:flex-row sm:items-center overflow-hidden hover:bg-gray-650 transition-colors"
                         >
-                          <div className="flex gap-1 p-2">
+                          <div className="flex gap-1 sm:gap-1 p-2 sm:p-2 justify-center sm:justify-start">
                             {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
                               <button
                                 key={rating}
                                 onClick={() => handleRatingClick(question.id, rating)}
-                                className={`w-7 h-7 rounded-full border-2 transition-all ${
+                                className={`w-10 h-10 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 transition-all active:scale-90 ${
                                   currentRating === rating
                                     ? `${getRatingColor(rating)} border-gray-900`
                                     : 'bg-white border-gray-400 hover:border-gray-600'
@@ -237,7 +240,7 @@ export default function Questionnaire({
                               />
                             ))}
                           </div>
-                          <div className="flex-1 px-4 py-2 text-gray-100 text-sm">
+                          <div className="flex-1 px-3 sm:px-4 py-2 text-gray-100 text-sm sm:text-sm text-center sm:text-left">
                             {question.label}
                           </div>
                         </div>
@@ -250,15 +253,15 @@ export default function Questionnaire({
           </div>
 
           {filteredQuestions.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-gray-400 text-lg">
+            <div className="text-center py-8 sm:py-12">
+              <p className="text-gray-400 text-base sm:text-lg">
                 Aucune question disponible avec ces filtres.
               </p>
             </div>
           )}
         </div>
 
-        <div className="mt-8 text-center text-gray-400 text-sm">
+        <div className="mt-6 sm:mt-8 text-center text-gray-400 text-xs sm:text-sm px-4">
           <p>
             Répondez aux questions, puis utilisez les boutons en haut pour
             capturer une image ou partager vos résultats.
