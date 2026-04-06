@@ -145,14 +145,15 @@ export default function Questionnaire({
   }
 
   return (
-    <div className="min-h-screen bg-brand-dark pb-20 md:pb-8">
-      <Legend />
+    <div className={`min-h-screen pb-20 md:pb-8 ${isCapturing ? 'bg-white' : 'bg-brand-dark'}`}>
+      {!isCapturing && <Legend />}
       <div className="max-w-4xl mx-auto px-3 sm:px-4 py-4 md:py-8">
-        <div className="flex flex-wrap justify-end items-center gap-2 sm:gap-3 md:gap-4 mb-4 md:mb-8">
-          <div className="flex items-center gap-2 sm:gap-3">
-            <label htmlFor="nsfw-toggle" className="text-gray-200 font-semibold text-xs sm:text-sm">
-              NSFW
-            </label>
+        {!isCapturing && (
+          <div className="flex flex-wrap justify-end items-center gap-2 sm:gap-3 md:gap-4 mb-4 md:mb-8">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <label htmlFor="nsfw-toggle" className="text-gray-200 font-semibold text-xs sm:text-sm">
+                NSFW
+              </label>
             <button
               id="nsfw-toggle"
               onClick={() => setShowNSFW(!showNSFW)}
@@ -192,15 +193,16 @@ export default function Questionnaire({
             )}
           </button>
 
-          <button
-            onClick={handleRestart}
-            className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-red-600 hover:text-white transition-all active:scale-95"
-            title="Recommencer"
-          >
-            <RotateCcw size={18} className="sm:w-5 sm:h-5" />
-            <span className="hidden sm:inline text-sm">Recommencer</span>
-          </button>
-        </div>
+            <button
+              onClick={handleRestart}
+              className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg bg-brand-mid text-gray-200 hover:bg-red-600 hover:text-white transition-all active:scale-95"
+              title="Recommencer"
+            >
+              <RotateCcw size={18} className="sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline text-sm">Recommencer</span>
+            </button>
+          </div>
+        )}
 
         <div ref={contentRef} className={`rounded-lg p-4 sm:p-6 md:p-8 animate-fadeIn ${isCapturing ? 'bg-white' : 'bg-brand-mid'}`}>
           <h2 className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center ${isCapturing ? 'text-black' : 'text-brand-accent'}`}>
