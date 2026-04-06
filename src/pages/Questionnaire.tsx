@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Camera, Share2, RotateCcw, Check } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { Question, Rating } from '../types';
+import Legend from '../components/Legend';
 
 interface QuestionnaireProps {
   questions: Question[];
@@ -141,6 +142,7 @@ export default function Questionnaire({
 
   return (
     <div className="min-h-screen bg-brand-dark">
+      <Legend />
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="flex justify-end items-center gap-4 mb-8">
           <div className="flex items-center gap-3">
