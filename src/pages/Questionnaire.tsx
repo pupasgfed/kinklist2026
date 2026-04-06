@@ -198,7 +198,7 @@ export default function Questionnaire({
             {title}
           </h2>
 
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {(() => {
               const groupedQuestions = filteredQuestions.reduce((acc, question) => {
                 const category = question.category || 'Général';
