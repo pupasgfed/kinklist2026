@@ -97,12 +97,12 @@ export default function Questionnaire({
 
   const getRatingLabel = (rating: Rating): string => {
     const labels: Record<Rating, string> = {
-      0: 'Pas du tout',
-      1: 'Un peu',
-      2: 'Modérément',
-      3: 'Bien',
-      4: 'Beaucoup',
-      5: 'Énormément',
+      0: 'Ne sais pas',
+      1: 'Kiff++',
+      2: 'Oui j\'aime bien',
+      3: 'Okay',
+      4: 'A discuter',
+      5: 'Pas du tout',
     };
     return labels[rating];
   };
@@ -217,31 +217,56 @@ export default function Questionnaire({
                   <div className="bg-gray-600 rounded px-3 sm:px-4 py-2">
                     <h3 className="text-white font-semibold text-xs sm:text-sm">{category}</h3>
                   </div>
-                  <div className="space-y-1 sm:space-y-1.5">
+                  <div className="space-y-3 sm:space-y-1.5">
                     {categoryQuestions.map((question) => {
                       const currentRating = responses[question.id];
 
                       return (
-                        <div
-                          key={question.id}
-                          className="bg-gray-700 rounded flex flex-col sm:flex-row sm:items-center overflow-hidden hover:bg-gray-650 transition-colors"
-                        >
-                          <div className="flex gap-1 sm:gap-1 p-2 sm:p-2 justify-center sm:justify-start">
-                            {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
-                              <button
-                                key={rating}
-                                onClick={() => handleRatingClick(question.id, rating)}
-                                className={`w-10 h-10 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 transition-all active:scale-90 ${
-                                  currentRating === rating
-                                    ? `${getRatingColor(rating)} border-gray-900`
-                                    : 'bg-white border-gray-400 hover:border-gray-600'
-                                }`}
-                                title={`${rating} - ${getRatingLabel(rating)}`}
-                              />
-                            ))}
+                        <div key={question.id}>
+                          <div className="md:hidden bg-gray-700/50 rounded-lg border-l-4 border-brand-accent/60 p-4">
+                            <div className="text-gray-100 text-base font-medium mb-3">
+                              {question.label}
+                            </div>
+                            <div className="grid grid-cols-2 gap-2">
+                              {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
+                                <button
+                                  key={rating}
+                                  onClick={() => handleRatingClick(question.id, rating)}
+                                  className={`
+                                    px-3 py-2.5 rounded-lg text-sm font-medium
+                                    border-2 transition-all active:scale-95
+                                    ${
+                                      currentRating === rating
+                                        ? `${getRatingColor(rating)} border-gray-900 text-gray-900 shadow-md`
+                                        : 'bg-gray-700 border-gray-600 hover:border-gray-500 text-gray-200'
+                                    }
+                                  `}
+                                  title={`${rating} - ${getRatingLabel(rating)}`}
+                                >
+                                  {rating} - {getRatingLabel(rating)}
+                                </button>
+                              ))}
+                            </div>
                           </div>
-                          <div className="flex-1 px-3 sm:px-4 py-2 text-gray-100 text-sm sm:text-sm text-center sm:text-left">
-                            {question.label}
+
+                          <div className="hidden md:flex bg-gray-700 rounded items-center overflow-hidden hover:bg-gray-650 transition-colors">
+                            <div className="flex gap-1 p-2 justify-start">
+                              {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
+                                <button
+                                  key={rating}
+                                  onClick={() => handleRatingClick(question.id, rating)}
+                                  className={`w-7 h-7 md:w-8 md:h-8 rounded-full border-2 transition-all ${
+                                    currentRating === rating
+                                      ? `${getRatingColor(rating)} border-gray-900`
+                                      : 'bg-white border-gray-400 hover:border-gray-600'
+                                  }`}
+                                  title={`${rating} - ${getRatingLabel(rating)}`}
+                                />
+                              ))}
+                            </div>
+                            <div className="flex-1 px-4 py-2 text-gray-100 text-sm">
+                              {question.label}
+                            </div>
                           </div>
                         </div>
                       );
