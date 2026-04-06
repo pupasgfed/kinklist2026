@@ -253,7 +253,7 @@ export default function Questionnaire({
                             </div>
                           )}
 
-                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: '#4a4a5e', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden' }}>
+                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: '#35354a', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden' }}>
                             <div className="flex gap-1 p-2 justify-start">
                               {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
                                 <button
@@ -268,7 +268,7 @@ export default function Questionnaire({
                                 />
                               ))}
                             </div>
-                            <div className="flex-1 px-4 py-2 text-gray-100 text-sm">
+                            <div className="flex-1 px-4 py-2 text-white text-base font-medium">
                               {question.label}
                             </div>
                           </div>
