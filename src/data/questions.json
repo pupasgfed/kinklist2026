@@ -1,302 +1,1087 @@
 [
   {
-    "id": "q001",
-    "label": "Relaxation profonde",
+    "id": "trance_001",
+    "label": "Je plonge facilement en transe",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q002",
-    "label": "Suggestions de confiance en soi",
+    "id": "trance_002",
+    "label": "Je bouge ou tressaille beaucoup une fois hypnotisé",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q003",
-    "label": "Visualisation guidée",
+    "id": "trance_003",
+    "label": "Je sors rapidement de la transe",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q004",
-    "label": "Inductions progressives",
+    "id": "trance_004",
+    "label": "Je suis désorienté au réveil",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q005",
-    "label": "Techniques de respiration",
+    "id": "trance_005",
+    "label": "J'ai besoin d'un environnement très sécurisant",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q006",
-    "label": "Suggestions post-hypnotiques",
+    "id": "trance_006",
+    "label": "Je veux un contrat clair sur ce qui va se passer",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q007",
-    "label": "Amnésie suggérée",
+    "id": "trance_007",
+    "label": "J'ai des trous de mémoire après la transe",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q008",
-    "label": "Catalepsie",
+    "id": "trance_008",
+    "label": "Je suis naturellement très réceptif",
+    "category": "Réactions à la transe",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q009",
-    "label": "Lévitation de bras",
+    "id": "safety_001",
+    "label": "Jouer avec des partenaires inconnus",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q010",
-    "label": "Anesthésie suggérée",
+    "id": "safety_002",
+    "label": "Je suis ok pour être mis en transe sans avertissement",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q011",
-    "label": "Régression",
+    "id": "safety_003",
+    "label": "Jouer en public",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q012",
-    "label": "Progression dans le futur",
+    "id": "safety_004",
+    "label": "Jouer avec des triggers sans prévenir",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q013",
-    "label": "Changement de perception du temps",
+    "id": "safety_005",
+    "label": "Jouer avec des déclencheurs en public",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q014",
-    "label": "Hallucinations positives",
+    "id": "safety_006",
+    "label": "Je veux pouvoir formuler des demandes avant la transe",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q015",
-    "label": "Hallucinations négatives",
+    "id": "safety_007",
+    "label": "Je veux que les déclencheurs soient supprimés après la séance",
+    "category": "Sécurité et consentement",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q016",
-    "label": "Dissociation",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q017",
-    "label": "Sensations physiques amplifiées",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q018",
-    "label": "Contrôle de la douleur",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q019",
-    "label": "Amélioration des performances",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q020",
-    "label": "Gestion du stress",
-    "nsfw": false,
-    "hidden": false
-  },
-  {
-    "id": "q021",
-    "label": "Soumission suggérée",
+    "id": "style_001",
+    "label": "L'hypnose érotique m'attire",
+    "category": "Styles d'hypnose",
     "nsfw": true,
     "hidden": false
   },
   {
-    "id": "q022",
-    "label": "Dominance suggérée",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q023",
-    "label": "Suggestions érotiques",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q024",
-    "label": "Orgasme sur commande",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q025",
-    "label": "Déni d'orgasme",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q026",
-    "label": "Sensations tactiles suggérées",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q027",
-    "label": "Fantasmes guidés",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q028",
-    "label": "Modification de la sensibilité corporelle",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q029",
-    "label": "Jeu de rôle hypnotique",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q030",
-    "label": "Immobilisation mentale",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q031",
-    "label": "Contrôle du plaisir",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q032",
-    "label": "Perte de contrôle volontaire",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q033",
-    "label": "Triggers érotiques",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q034",
-    "label": "Bimbofication",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q035",
-    "label": "Transformation suggérée",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q036",
-    "label": "Hypnose de poupée",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q037",
-    "label": "Contrôle mental",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q038",
-    "label": "Lavage de cerveau consensuel",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q039",
-    "label": "Esclavage mental temporaire",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q040",
-    "label": "Humiliation érotique",
-    "nsfw": true,
-    "hidden": false
-  },
-  {
-    "id": "q041",
-    "label": "Méditation guidée",
+    "id": "style_002",
+    "label": "L'hypnose récréative (ludique, bon enfant)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q042",
-    "label": "Ancrage émotionnel",
+    "id": "style_003",
+    "label": "L'hypnose thérapeutique (exploration émotionnelle)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q043",
-    "label": "Techniques d'auto-hypnose",
+    "id": "style_004",
+    "label": "L'hypnose de spectacle (stage hypnosis)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q044",
-    "label": "Renforcement de motivation",
+    "id": "style_005",
+    "label": "Les voyages intérieurs avec exploration de scénarios",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q045",
-    "label": "Changement d'habitudes",
+    "id": "style_006",
+    "label": "Je suis ouvert aux composantes BDSM",
+    "category": "Styles d'hypnose",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "style_007",
+    "label": "Je cherche des dynamiques dominé/soumis liées à l'hypnose",
+    "category": "Styles d'hypnose",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "style_008",
+    "label": "L'hypnose par texte (messages, scripts)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q046",
-    "label": "Gestion de l'anxiété",
+    "id": "style_009",
+    "label": "L'hypnose audio (fichiers audio, session audio)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q047",
-    "label": "Amélioration du sommeil",
+    "id": "style_010",
+    "label": "L'hypnose en appel vidéo (appel visio, videos)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q048",
-    "label": "Créativité amplifiée",
+    "id": "style_011",
+    "label": "L'hypnose avec vidéos en appui (spirales, textes subliminaux)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q049",
-    "label": "Mémoire améliorée",
+    "id": "style_012",
+    "label": "L'hypnose en personne (contact direct)",
+    "category": "Styles d'hypnose",
     "nsfw": false,
     "hidden": false
   },
   {
-    "id": "q050",
-    "label": "Concentration renforcée",
+    "id": "style_013",
+    "label": "Plusieurs hypnotiseurs ensemble",
+    "category": "Styles d'hypnose",
     "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "style_014",
+    "label": "Plusieurs personnes en transe en même temps",
+    "category": "Styles d'hypnose",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "style_015",
+    "label": "L'hypnose cachée (covert), sans que je m'en rende compte",
+    "category": "Styles d'hypnose",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_001",
+    "label": "J'aime regarder quelqu'un entrer en transe",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_002",
+    "label": "J'aime observer un hypnotiseur en action",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_003",
+    "label": "Je joue la résistance avant de céder",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_004",
+    "label": "J'aime être insolent ou provocateur (\"bratty\")",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_005",
+    "label": "Je préfère les longues séances de transe",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_006",
+    "label": "Je ne crains pas de baver pendant la transe",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_007",
+    "label": "J'aime les yeux qui se révulsent",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_008",
+    "label": "Je me sens bien dans le rôle de soumis",
+    "category": "Préférences",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "pref_009",
+    "label": "J'aime recevoir de la domination",
+    "category": "Préférences",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "pref_010",
+    "label": "J'aime être surpris",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "pref_011",
+    "label": "Je laisse l'hypnotiseur faire ce qu'il veut",
+    "category": "Préférences",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_001",
+    "label": "Stimuli auditifs (voix, sons, musique)",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_002",
+    "label": "Stimuli kinesthésiques (toucher, mouvement, pression)",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_003",
+    "label": "Stimuli visuels (images, mouvements)",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_004",
+    "label": "Sons binauraux (effets stéréo)",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_005",
+    "label": "Le claquement de doigts",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_006",
+    "label": "Les spirales (mouvements oculaires)",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_007",
+    "label": "Les pendules",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_008",
+    "label": "Les objets brillants",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_009",
+    "label": "Les cristaux",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_010",
+    "label": "Les lumières clignotantes",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_011",
+    "label": "La montre à gousset classique",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_012",
+    "label": "Le métronome (rythme)",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "sensory_013",
+    "label": "Les gestes ou signes des mains",
+    "category": "Stimulation sensorielle",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_001",
+    "label": "Parler lentement",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_002",
+    "label": "Parler plus rapidement",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_003",
+    "label": "Voix apaisante et douce",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_004",
+    "label": "Induction par confusion",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_005",
+    "label": "Surcharge sensorielle",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_006",
+    "label": "Relaxation progressive",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_007",
+    "label": "Relaxation musculaire progressive",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_008",
+    "label": "Hypnose conversationnelle (dans le flux du dialogue)",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_009",
+    "label": "Miroir des gestes ou de la respiration",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_010",
+    "label": "Visualisations guidées",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_011",
+    "label": "Stimuli auditifs guidés",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_012",
+    "label": "Fractionnement (entrer/sortir de transe plusieurs fois)",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_013",
+    "label": "Rappel d'une transe précédente",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_014",
+    "label": "Compte à rebours",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_015",
+    "label": "Concentration sur un point précis",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_016",
+    "label": "Fixation oculaire",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "induction_017",
+    "label": "Inductions instantanées (drop immédiat)",
+    "category": "Inductions",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_001",
+    "label": "Beauté et sensualité",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_002",
+    "label": "Absence d'émotion, vide intérieur",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_003",
+    "label": "Force et concentration",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_004",
+    "label": "Énergie intense",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_005",
+    "label": "Impuissance",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_006",
+    "label": "Malice, comportement interdit",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_007",
+    "label": "Captivité",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_008",
+    "label": "Objectification (être traité comme un objet)",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_009",
+    "label": "Froidure, impersonnalité",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_010",
+    "label": "Détachement émotionnel",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_011",
+    "label": "Excitation sexuelle",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_012",
+    "label": "Plaisir pur",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_013",
+    "label": "Explorer mes fantasmes",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_014",
+    "label": "Me sentir en sécurité et protégé",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_015",
+    "label": "Me sentir vulnérable",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_016",
+    "label": "Peur contrôlée",
+    "category": "Jeu émotionnel",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emotion_017",
+    "label": "Humiliation consentie",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emotion_018",
+    "label": "Dégradation (verbale ou symbolique)",
+    "category": "Jeu émotionnel",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "emergence_001",
+    "label": "Remontée lente, par compte à rebours",
+    "category": "Sortie de transe",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emergence_002",
+    "label": "Mot ou geste déclencheur pour me réveiller",
+    "category": "Sortie de transe",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emergence_003",
+    "label": "Compter seulement jusqu'à trois ou cinq",
+    "category": "Sortie de transe",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "emergence_004",
+    "label": "Être simplement dit de revenir ou de me réveiller",
+    "category": "Sortie de transe",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_001",
+    "label": "Suggestions post-hypnotiques (effets après la séance)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_002",
+    "label": "Catalepsie (raideur musculaire)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_003",
+    "label": "Immobilisation totale",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_004",
+    "label": "Lévitation (sensation de flotter)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_005",
+    "label": "Déclencheurs de \"freeze\" (\"stop\")",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_006",
+    "label": "Être vide, vide d'esprit",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_007",
+    "label": "Amnésie partielle ou totale",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_008",
+    "label": "Répétition de mantras",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_009",
+    "label": "Changement de comportement",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_010",
+    "label": "Jeu de personnalité (altération de l'identité)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_011",
+    "label": "Hallucinations positives (voir/sentir ce qui n'est pas là)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_012",
+    "label": "Hallucinations négatives (ne plus voir/sentir ce qui est là)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_013",
+    "label": "Effet de \"cervelle fondue\" (mind melting)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_014",
+    "label": "Lavage de cerveau (symbolique)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_015",
+    "label": "Contrôle mental (consenti)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_016",
+    "label": "Transformation d'identité",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_017",
+    "label": "Jeu de rôle animal (pet play)",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_018",
+    "label": "Contrôle total (par l'autre)",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_019",
+    "label": "Jeu du grand et du petit (big/little)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_020",
+    "label": "Lâcher-prise total",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_021",
+    "label": "Soumission active",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_022",
+    "label": "Simulation de drogue (effets mentaux)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_023",
+    "label": "Être joueur, joueur(euse)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_024",
+    "label": "Être désobéissant(e), coquin(e)",
+    "category": "Suggestions 1",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_025",
+    "label": "Captivité / impuissance",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_026",
+    "label": "Jeu de pouvoir",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_027",
+    "label": "Passivité complète",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_028",
+    "label": "Déclencheur d'orgasme",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_029",
+    "label": "Séduction guidée",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_030",
+    "label": "Plaisir sans toucher",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest1_031",
+    "label": "Orgasme sans contact physique",
+    "category": "Suggestions 1",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_001",
+    "label": "Féminisation (rôles de genre, apparence)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_002",
+    "label": "Masculinisation (exagération du masculin)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_003",
+    "label": "Furry (identification à son personna animale)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_004",
+    "label": "Marionnette (être une poupée)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_005",
+    "label": "Robotisation (être une machine ou robot)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_006",
+    "label": "Jeu avec la mémoire (altération ou suppression)",
+    "category": "Suggestions 2",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_007",
+    "label": "Objectification poussée (drone-GIMP)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_008",
+    "label": "Bimbofication (stéréotype de la \"bimbo\")",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_009",
+    "label": "Jeu sur le QI (être stupide ou super-intelligent)",
+    "category": "Suggestions 2",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_010",
+    "label": "Jeu de viol (consenti-fictionnel)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_011",
+    "label": "BDSM (corde, claquage, contraintes)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_012",
+    "label": "Jeu D/s classique (dominance/soumission)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_013",
+    "label": "Non-consentement consenti (consensual non-consent)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_014",
+    "label": "Sissyfication",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_015",
+    "label": "Port de couches (diapering)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_016",
+    "label": "Chantage (fictionnel ou symbolique)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_017",
+    "label": "Jeux urinaires (watersports)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_018",
+    "label": "Obéissance aveugle (avoir l'impression de)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_019",
+    "label": "Déclencheurs de douleur",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_020",
+    "label": "Tease and release (attente puis libération)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_021",
+    "label": "Tease and denial (attente puis refus)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_022",
+    "label": "Edging",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_023",
+    "label": "D/s au dela de la session",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_024",
+    "label": "Jeu de résistance (lutter puis céder)",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_025",
+    "label": "Descriptions sexuelles indirectes",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_026",
+    "label": "Descriptions sexuelles très directes",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_027",
+    "label": "Être guidé pas à pas",
+    "category": "Suggestions 2",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_028",
+    "label": "Être au centre de l'attention",
+    "category": "Suggestions 2",
+    "nsfw": false,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_029",
+    "label": "Être ordonné de me déshabiller",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_030",
+    "label": "Être ordonné de me masturber",
+    "category": "Suggestions 2",
+    "nsfw": true,
+    "hidden": false
+  },
+  {
+    "id": "suggest2_031",
+    "label": "Être forcé de faire quelque chose (symboliquement)",
+    "category": "Suggestions 2",
+    "nsfw": true,
     "hidden": false
   }
 ]
