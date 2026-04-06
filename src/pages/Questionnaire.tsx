@@ -56,13 +56,15 @@ export default function Questionnaire({
 
     setIsCapturing(true);
 
-    await new Promise(resolve => setTimeout(resolve, 100));
+    await new Promise(resolve => setTimeout(resolve, 300));
 
     try {
       const canvas = await html2canvas(contentRef.current, {
-        backgroundColor: '#323347',
+        backgroundColor: '#ffffff',
         scale: 2,
       });
+
+      await new Promise(resolve => setTimeout(resolve, 500));
 
       canvas.toBlob((blob) => {
         if (blob) {
@@ -73,11 +75,11 @@ export default function Questionnaire({
           link.click();
           URL.revokeObjectURL(url);
         }
+        setTimeout(() => setIsCapturing(false), 100);
       });
     } catch (error) {
       console.error('Screenshot failed:', error);
-    } finally {
-      setTimeout(() => setIsCapturing(false), 500);
+      setIsCapturing(false);
     }
   };
 
