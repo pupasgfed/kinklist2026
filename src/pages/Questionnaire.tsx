@@ -200,8 +200,8 @@ export default function Questionnaire({
           </button>
         </div>
 
-        <div ref={contentRef} className="bg-brand-mid rounded-lg p-4 sm:p-6 md:p-8 animate-fadeIn">
-          <h2 className="text-2xl sm:text-3xl font-bold text-brand-accent mb-4 sm:mb-6 text-center">
+        <div ref={contentRef} className={`rounded-lg p-4 sm:p-6 md:p-8 animate-fadeIn ${isCapturing ? 'bg-white' : 'bg-brand-mid'}`}>
+          <h2 className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center ${isCapturing ? 'text-black' : 'text-brand-accent'}`}>
             {title}
           </h2>
 
@@ -216,8 +216,8 @@ export default function Questionnaire({
 
               return Object.entries(groupedQuestions).map(([category, categoryQuestions]) => (
                 <div key={category} className="space-y-2">
-                  <div className="bg-gray-600 rounded px-3 sm:px-4 py-2">
-                    <h3 className="text-white font-semibold text-xs sm:text-sm">{category}</h3>
+                  <div className={`rounded px-3 sm:px-4 py-2 ${isCapturing ? 'bg-gray-200' : 'bg-gray-600'}`}>
+                    <h3 className={`font-bold text-sm sm:text-base ${isCapturing ? 'text-black' : 'text-white'}`}>{category}</h3>
                   </div>
                   <div className="space-y-3 sm:space-y-1.5">
                     {categoryQuestions.map((question) => {
@@ -253,7 +253,7 @@ export default function Questionnaire({
                             </div>
                           )}
 
-                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: '#35354a', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden' }}>
+                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: isCapturing ? '#f5f5f5' : '#35354a', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden' }}>
                             <div className="flex gap-1 p-2 justify-start">
                               {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
                                 <button
@@ -268,7 +268,7 @@ export default function Questionnaire({
                                 />
                               ))}
                             </div>
-                            <div className="flex-1 px-4 py-2 text-white text-base font-medium">
+                            <div className={`flex-1 px-4 py-2 text-base font-semibold ${isCapturing ? 'text-black' : 'text-white'}`}>
                               {question.label}
                             </div>
                           </div>
