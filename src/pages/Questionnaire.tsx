@@ -220,7 +220,7 @@ export default function Questionnaire({
 
               return Object.entries(groupedQuestions).map(([category, categoryQuestions]) => (
                 <div key={category} className="space-y-2">
-                  <div className={`rounded px-3 sm:px-4 py-2 ${isCapturing ? 'bg-gray-200' : 'bg-gray-600'}`}>
+                  <div className={`rounded px-3 sm:px-4 py-2 ${isCapturing ? 'bg-white border-2 border-gray-300' : 'bg-gray-600'}`}>
                     <h3 className={`font-bold text-sm sm:text-base ${isCapturing ? 'text-black' : 'text-white'}`}>{category}</h3>
                   </div>
                   <div className="space-y-3 sm:space-y-1.5">
@@ -257,7 +257,7 @@ export default function Questionnaire({
                             </div>
                           )}
 
-                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: isCapturing ? '#f5f5f5' : '#35354a', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden' }}>
+                          <div className={isCapturing ? 'flex' : 'hidden md:flex'} style={{ backgroundColor: isCapturing ? '#ffffff' : '#35354a', borderRadius: '0.25rem', alignItems: 'center', overflow: 'hidden', border: isCapturing ? '1px solid #d1d5db' : 'none' }}>
                             <div className="flex gap-1 p-2 justify-start">
                               {([0, 1, 2, 3, 4, 5] as Rating[]).map((rating) => (
                                 <button
