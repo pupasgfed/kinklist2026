@@ -7,28 +7,28 @@ export default function Header() {
         </div>
         <nav className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
           <a
-            href="https://linktr.ee/hypnosekinky"
+            href="https://www.hypnosekinky.com/allmylinks"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-brand-accent transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap"
           >
-            All my links
+            Tous mes liens
           </a>
           <a
-            href="https://www.hypnosekinky.com/book-a-session"
+            href="https://www.hypnosekinky.com/rendez-vous"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-brand-accent transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap"
           >
-            Book a session
+            Réserver une session
           </a>
           <a
-            href="https://www.hypnosekinky.com/about"
+            href="https://www.hypnosekinky.com/newsletter"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-brand-accent transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap"
           >
-            About me
+            Rejoindre la Newsletter
           </a>
         </nav>
       </div>

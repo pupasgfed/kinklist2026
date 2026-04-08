@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Youtube, Mail } from 'lucide-react';
+import { Instagram, Twitter, Youtube, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,29 +12,29 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-brand-accent transition-colors font-semibold text-xs sm:text-sm"
             >
-              Main Website
+              Visiter hypnosekinky.com
             </a>
             <a
-              href="https://www.hypnosekinky.com/contact"
+              href="https://www.hypnosekinky.com/newsletter"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-brand-accent transition-colors text-xs sm:text-sm"
             >
-              Contact
+              Newsletter
             </a>
             <a
-              href="https://www.hypnosekinky.com/privacy"
+              href="https://www.hypnosekinky.com/mentions-legales"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-brand-accent transition-colors text-xs sm:text-sm"
             >
-              Privacy
+              Mentions Legales
             </a>
           </div>
 
           <div className="flex gap-4 sm:gap-5">
             <a
-              href="https://instagram.com/hypnosekinky"
+              href="https://www.instagram.com/pupasgfed/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-brand-accent transition-colors"
@@ -43,7 +43,7 @@ export default function Footer() {
               <Instagram size={20} className="sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://twitter.com/hypnosekinky"
+              href="https://twitter.com/pupasgfed"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-brand-accent transition-colors"
@@ -52,16 +52,7 @@ export default function Footer() {
               <Twitter size={20} className="sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://youtube.com/@hypnosekinky"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-brand-accent transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube size={20} className="sm:w-6 sm:h-6" />
-            </a>
-            <a
-              href="mailto:contact@hypnosekinky.com"
+              href="https://www.hypnosekinky.com/newsletter"
               className="text-gray-300 hover:text-brand-accent transition-colors"
               aria-label="Email"
             >
@@ -71,7 +62,8 @@ export default function Footer() {
         </div>
 
         <div className="text-center mt-4 sm:mt-6 text-gray-400 text-xs sm:text-sm">
-          © {new Date().getFullYear()} Hypnose Kinky. All rights reserved.
+          © {new Date().getFullYear()} kinklist hypnose - @pupasgfed - tous le
+          détails sur hypnosekinky.com
         </div>
       </div>
     </footer>
