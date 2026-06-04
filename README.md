@@ -1,3 +1,8 @@
+
+# Link
+
+Lien kinklist version bolt : [https://pupasgfed.github.io/kinklist2026/](https://pupasgfed.github.io/kinklist2026/)
+
 # Mes Préférences Hypnotiques
 
 A modern, minimalistic web application to help people discover and share their hypnosis preferences. Built with React, TypeScript, and Tailwind CSS.
